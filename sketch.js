@@ -1,9 +1,5 @@
-var monkey = createSprite(200,380,20,50);
-monkey.setAnimation("monkey");
-
-var ground = createSprite(200,390,800,20);
-ground.shapeColor = "green";
-
+var monkey
+var ground 
 //scale and position the monkey
 monkey.scale = 0.1;
 monkey.x = 50;
@@ -67,5 +63,10 @@ function Obstacles() {
 
 function setup() {
   createCanvas(400, 400);
+  monkey = createSprite(200,380,20,50);
+  ground = createSprite(200,390,800,20);
 }
 
+function preload(){
+  monkey = loadanimation("monkey_01.png","monkey_02.png","monkey_03.png","monkey_04.png","monkey_05.png","monkey_06.png","monkey_07.png","monkey_08.png","monkey_09.png","monkey_10.png",);
+}
