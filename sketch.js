@@ -32,6 +32,9 @@ function draw() {
   
   monkey.velocityY = monkey.velocityY + 0.8
      monkey.collide(invisibleGround);
+monkey.display()
+ invisibleGround.display()
+ 
   spawnObstacles();
   drawSprites()
   }
