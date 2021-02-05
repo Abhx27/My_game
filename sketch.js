@@ -66,8 +66,5 @@ function preload(){
 }
 function setup() {
   createCanvas(400, 400);
-  monkey = createSprite(200,380,20,50);
-  ground = createSprite(200,390,800,20);
-  banana =  createSprite(400,260,40,10);
-  obstacle = createSprite(400,365,10,40);
+
 }
